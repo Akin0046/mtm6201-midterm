@@ -4,8 +4,116 @@ body {
     background-color: black;
   }
   
+  .center-text h1{
+    text-align: center;
+  }
+  
+  .center-text h1 {
+    display: inline-block;
+    margin: 0;
+  }
+  
+
+  .sidenav {
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: -250px;
+      height: 100%;
+      background-color: #9C7C7C;
+      transition: left 0.3s ease-in-out;
+      z-index: 999;
+      color: #fff;
+      overflow: hidden;
+  }
+  
+  .sidenav.active {
+      left: 0;
+  }
+  
+  .sidenav a {
+      display: block;
+      padding: 16px;
+      text-decoration: none;
+      color: #fff;
+  }
+  
+  .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+  }
+  
+  .openbtn {
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      transition: all 0.3s;
+  }
+  
+  .openbtn:hover {
+      background-color: #fff;
+      color: #333;
+  }
+  
+  /* Additional styles for the header */
   .top-banner {
-    background-color: #fff; /* Set background color of the top banner */
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 50px;
+      padding: 0 20px;
+  }
+  
+
+  
+
+  
+  .menu-button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+  }
+  
+  .menu-button:hover {
+      color: #333;
+  }
+  
+  .search-button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+  }
+  
+  .search-button:hover {
+      color: #333;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .top-banner {
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,19 +133,71 @@ body {
     font-size: 20px;
   }
   
+  .banner {
+    position: relative;
+  }
+  
+  .banner-image img {
+    width: 100%;
+    height: auto;
+  }
+  .banner .btn {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #9C7C7C;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .banner .btn:hover {
+    background-color: black;
+  }
+  .centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .centered-text h2 {
+    color: #fff;
+    font-size: 28px;
+  }
+  
+  .booking-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .booking-button:hover {
+    background-color: #45a049;
+  }
+  
   .services-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
-    grid-gap: 10px; /* Set the gap between grid items */
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
     justify-items: center;
-    margin: 20px; /* Set the margin around the container */
-    margin-top: 2rem; /* Add top margin of 2 rems */
+    margin: 20px;
+    margin-top: 2rem;
   }
   
   .service-button {
     width: 150px;
     height: 150px;
-    background-color: #9C7C7C; /* Set the background color of the service button */
+    background-color: #9C7C7C;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,13 +205,77 @@ body {
   
   .service-text {
     font-size: 20px;
-    color: white; /* Set the text color to white */
-    text-align: center; /* Center the text horizontally */
+    color: white;
+    text-align: center;
   }
   
   .services-container::before {
-    content: ""; /* Create a pseudo-element */
-    grid-column: 1 / -1; /* Span the entire width of the grid */
-    height: 20px; /* Adjust the height as needed */
+    content: "";
+    grid-column: 1 / -1;
+    height: 20px;
+  }
+  
+  header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .form-container {
+    width: 50%;
+    padding: 20px;
+  }
+  
+  .form-container h1 {
+    margin-top: 0;
+  }
+  
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-container label {
+    margin-bottom: 10px;
+  }
+  
+  .form-container input,
+  .form-container textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-container button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .business-info {
+    width: 50%;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .business-info h2 {
+    margin-top: 0;
+  }
+  
+  .business-info ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .business-info li {
+    margin-bottom: 10px;
+  }
+  
+  .business-info i {
+    margin-right: 10px;
   }
   
