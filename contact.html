@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>mtm6201-midterm</title>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link href="./css/main.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mtm6201-midterm</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="./css/main.css" rel="stylesheet">
+    
 </head>
 <body>
-  <header class="top-banner">
-    <button class="menu-button">
-      <i class="fas fa-bars"></i>
-    </button>
-    <div class="center-text">
-      <h1>OT. Hairstylist</h1>
+    <header class="top-banner">
+        
+        <div class="center-text">
+            <!-- Skip link for navigation -->
+            <a class="skip-link" href="#main-content">Skip to main content</a>
+            <button class="menu-button" onclick="openNav()">
+              <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <h1>OT. Hairstylist</h1>
+
+        <button class="search-button">
+          <i class="fas fa-search"></i>
+        </button>
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
     </div>
-    <button class="search-button">
-      <i class="fas fa-search"></i>
-    </button>
-  </header>
 
+    <script src="main.js"></script>
 
-  <div class="form-container">
+  <div class="form-container" id="main-content" tabindex="-1">
     <form action="action_page.php" method="POST">
-
+      <h2>Contact Form</h2>
       <label for="fname">First Name</label>
       <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
 
       <label for="lname">Last Name</label>
       <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
 
-      
-
       <label for="subject">Subject</label>
       <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
 
       <input type="submit" value="Submit">
-
     </form>
   </div>
 
