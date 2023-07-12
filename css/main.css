@@ -50,7 +50,7 @@ body {
     margin-left: 50px;
   }
   
-  /* Button style for opening the side navigation */
+  /* Button style for opening the ANIMATED side navigation */
   .openbtn {
     font-size: 20px;
     cursor: pointer;
@@ -163,6 +163,26 @@ body {
     margin-top: 2rem;
   }
   
+/* scale animations for service items */
+
+  .service-button {
+    width: 150px;
+    height: 150px;
+    padding: 1em;
+    
+    transition: transform 1s;
+  }
+  
+    /* transform: scale */
+  .service-button:hover{
+      transform: scale(.6);
+  }
+
+
+
+
+
+
   .service-button {
     width: 150px;
     height: 150px;
@@ -251,3 +271,6 @@ body {
     margin-right: 10px;
   }
   
+  .skip-link{
+    background-color: #fff;
+  }
