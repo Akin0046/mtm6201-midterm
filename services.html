@@ -5,48 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mtm6201-midterm</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
     <link href="./css/main.css" rel="stylesheet">
+ 
+</head>
+<body>
+    <header class="top-banner">
+        <!-- Skip link for accessibility -->
+        <a href="#content" class="skip-link">Skip to main content</a>
 
-    <body>
-        <header class="top-banner">
-          <button class="menu-button">
-            <i class="fas fa-bars"></i>
-          </button>
-          <div class="center-text">
-            <h1>OT. Hairstylist</h1>
-          </div>
-          <button class="search-button">
-            <i class="fas fa-search"></i>
-          </button>
-        </header>
-        
+        <div class="center-text">
+            <button class="menu-button" onclick="openNav()">
+              <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <h1>OT. Hairstylist</h1>
 
-  <div class="services-container">
-    <div class="service-button">
-      <span class="service-text">Services</span>
+        <button class="search-button">
+          <i class="fas fa-search"></i>
+        </button>
+    </header>
+
+    <div id="mySidenav" class="sidenav" role="navigation">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
     </div>
-    <div class="service-button">
-      <span class="service-text">Services</span>
-    </div>
-    <div class="service-button">
-      <span class="service-text">Services</span>
-    </div>
-    <div class="service-button">
-      <span class="service-text">Services</span>
-    </div>
-    <div class="service-button">
-      <span class="service-text">Services</span>
-    </div>
-    <div class="service-button">
-      <span class="service-text">Services</span>
-    </div>
-    <div class="service-button">
-      <span class="service-text">Services</span>
-    </div>
-    <div class="service-button">
-      <span class="service-text">Services</span>
-    </div>
-  </div>
+
+    <script src="main.js"></script>
+
+    <!-- Main content -->
+    <main id="content" tabindex="-1" role="main">
+      <div class="services-container" role="region" aria-label="Services">
+        <div class="service-button">
+          <span class="service-text">Services</span>
+        </div>
+        <div class="service-button">
+          <span class="service-text">Services</span>
+        </div>
+        <div class="service-button">
+          <span class="service-text">Services</span>
+        </div>
+        <div class="service-button">
+          <span class="service-text">Services</span>
+        </div>
+        <div class="service-button">
+          <span class="service-text">Services</span>
+        </div>
+        <div class="service-button">
+          <span class="service-text">Services</span>
+        </div>
+        <div class="service-button">
+          <span class="service-text">Services</span>
+        </div>
+        <div class="service-button">
+          <span class="service-text">Services</span>
+        </div>
+      </div>
+    </main>
 </body>
 </html>
